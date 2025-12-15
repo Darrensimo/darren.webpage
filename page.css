@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', 'Tilt Warp', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0b2a8f, #02124d);
+  color: white;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+
+.left {
+  max-width: 50%;
+}
+
+.title {
+  font-size: 110px;
+  font-weight: 900;
+  color: silver;
+  text-shadow: 0 6px 10px rgba(0,0,0,.6);
+}
+
+.left h2 {
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.left p {
+  margin-top: 10px;
+  font-size: 32px;
+  line-height: 1.6;
+}
+
+.ftiitb {
+  margin-top: 30px;
+  width: 340px;
+  border-radius: 5px;
+}
+
+.profile-card {
+  position: relative;
+  width: 450px;
+  height: 650px;
+  background: #bfbfbf;
+  border-radius: 28px;
+  padding: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.5);
+  overflow: hidden;
+}
+
+/* GRAIN TEXTURE */
+.profile-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/grain.png");
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* TOP */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.username {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(0,0,0,.5);
+  text-shadow: #2c2b2b 0 0 2px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* NAME */
+.name {
+  margin-top: 20px;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: rgb(27, 8, 84);
+  text-shadow: 0 2px 8px rgba(0,0,0,.4);
+}
+
+
+.profile-img {
+  position: absolute;
+  bottom: 56px;
+  left: 65%;
+  transform: translateX(-50%);
+  height: 600px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,.5));
+}
+
+.card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: rgba(255,255,255,.3);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+}
+
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socials a {
+  color: black;
+  font-size: 28px;
+  transition: 0.2s;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.bookmark {
+  font-size: 28px;
+}
